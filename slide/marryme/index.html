@@ -79,6 +79,8 @@
             border-radius: 5px;
             padding: 10px;
             margin-bottom: 15px;
+            background: #f2eada;
+            color: #5c5c5c;
         }
 
         .section > .msg {
@@ -215,15 +217,16 @@
     </div>
     <script>
         document.getElementById('btn1').addEventListener('click', function() {
-            var p = prompt('么么么么么么哒，我就知道我媳妇会选这个，请输入你公历生日的8位数字')
-            if(p == '19890921') {
+//            var p = prompt('么么么么么么哒，我就知道我媳妇会选这个，请输入你公历生日的8位数字')
+//            if(p == '19890921') {
+            alert('么么么么么么哒，我就知道我媳妇会选这项的');
                 document.getElementById('s1').style.display = 'none'
                 document.getElementById('s2').style.display = 'block'
                 document.querySelector('body').style.background = '#ef5b9c';
                 document.getElementById('header').style.display = 'none';
-            } else {
-                alert('输入有误哦~');
-            }
+//            } else {
+//                alert('输入有误哦~');
+//            }
         }, false)
         document.getElementById('btn2').addEventListener('click', function() {
             alert('此路不通！')
